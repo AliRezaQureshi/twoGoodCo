@@ -1,7 +1,20 @@
 // GSAP functions 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
+
 function imgHoverEffect() {
     const imgCon = document.querySelector(".mainImg");
     const playBtn = document.querySelector(".play");
+
+     gsap.from(".img-container", {
+        scale: 1.1,
+        opacity:0,
+        duration:0.8,
+        delay: 1.3,
+        ease:"power4.out",
+    })
 
     imgCon.addEventListener("mouseenter", () => {
         gsap.to(playBtn, {
@@ -17,20 +30,33 @@ function imgHoverEffect() {
     });
     imgCon.addEventListener("mousemove", (dets) => {
         gsap.to(playBtn, {
-            left: dets.x,
-            top: dets.y
-            
+            left: dets.x-80,
+            top: dets.y-80,
         });
     })
 }
-gsap.from(".page1 h1", {
-    y: 30,
-    opacity: 0,
-    duration: 1.5,
-    delay:0.5,
-    ease: "power4.out"
-})
+function loadingTitleAnim() {
+    gsap.from(".page1 h1", {
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+        delay:0.8,
+        ease: "power4.out",
+        stagger:0.2
+    });
+    
+
+}
+
+
+
+
+
+
 
 // Calling the animated functions
+
 imgHoverEffect();
+loadingTitleAnim();
+
 
