@@ -1,9 +1,11 @@
-// GSAP functions 
 const scroll = new LocomotiveScroll({
     el: document.querySelector('.main'),
     smooth: true
 });
 
+
+
+// GSAP functions 
 function imgHoverEffect() {
     const imgCon = document.querySelector(".mainImg");
     const playBtn = document.querySelector(".play");
