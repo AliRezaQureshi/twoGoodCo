@@ -84,11 +84,11 @@ html, body {
 
 /* Page 2 */
 .page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 18vh 1.5vw;
+    padding: 10vh 1.5vw;
     position: relative;
 }
 .topLine{
@@ -136,7 +136,7 @@ hr{
 
 /* Responsive page 1 and page 2 */
 @media (max-width: 600px){
-    .page1 h1{
+.page1 h1{
     font-family: futura;
     font-size: 15vw;
     text-transform: uppercase;
@@ -146,8 +146,9 @@ hr{
     margin-right: 1vw;
 }
 .page1{
+    min-height: 70vh;
     width: 100%;
-    padding: 25vw 1vw 5vw 1vw
+    padding: 25vw 1vw 3vw 1vw
 }
 
 .img-container{
@@ -158,7 +159,7 @@ hr{
 }
 .img-container img{
     /* height: 100%; */
-    width: 90%;  
+    width: 95%;  
     border-radius: 5px;
     margin-bottom: 10vw;
     margin-top: 5vw;
@@ -176,6 +177,50 @@ hr{
 .bottom-txt a{
     font-size: 2.5vw;
     margin-top: 4vw;
+    margin-bottom: 0px;
 }
+.page2 .topLine p{
+    font-size: 3vw;
+    
+}
+
+
+.page2{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 3vw;
+    position: relative;
+}
+.page2  .elemBox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 1.2vw;
+    gap: 3vw;
+}
+.elem{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    /* display: flex;
+    align-items:center;
+    justify-content: space-between; */
+    overflow: hidden;
+    margin-bottom: 3vw;
+    border-radius: 5px;
+}
+
+.page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+}
+
 
 }
