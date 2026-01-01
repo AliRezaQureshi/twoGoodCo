@@ -14,6 +14,54 @@ html, body {
 body{
     background-color: #F7F7F7;
 }
+/* Nav Bar */
+.nav{
+    /* height: 100px; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: burlywood; */
+    z-index: 99;
+    position: fixed;
+    padding: 25px;
+}
+.nav-part1{
+    /* background-color: red; */
+    height: 82px;
+    overflow: hidden;
+}
+.nav-part1 svg{
+    display: block;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.nav-part2 .links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0  20px;
+}
+
+.nav-part2 .icons i{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+.icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+    
+}
+
 .cursor{
     height: 150px;
     width: 150px;
@@ -191,6 +239,7 @@ hr{
 
 /* Responsive page 1 and page 2 */
 @media (max-width: 600px){
+
 .page1 h1{
     font-family: futura;
     font-size: 15vw;
@@ -199,11 +248,13 @@ hr{
     letter-spacing: -2px;
     margin-left: 1vw;
     margin-right: 1vw;
+    
 }
 .page1{
     min-height: 70vh;
     width: 100%;
-    padding: 25vw 1vw 3vw 1vw
+    padding: 52vw 1vw 3vw 1vw;
+    
 }
 
 .img-container{
@@ -277,5 +328,85 @@ hr{
     scale: 1.2;
 }
 
+/* Page3 */
+.page3{
+    min-height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    height: 55vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10vw;
+}
+
+.child img{
+    height: 90%;
+}
+
+/* Nav Bar */
+.nav{
+    /* height: 100px; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: burlywood; */
+    z-index: 99;
+    position: fixed;
+    padding: 15px;
+    
+    
+}
+.nav-part1{
+    /* background-color: red; */
+    height: 67px;
+    overflow: hidden;
+}
+.nav-part1 svg{
+    display: block;
+    width: 80px;
+    height: 72px;
+    
+}
+.nav .s2{
+    height: 70px;
+    width: 40px;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.nav-part2 .links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0  20px;
+    display: none;
+}
+
+.nav-part2 .icons i{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+.icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+    
+}
 
 }
