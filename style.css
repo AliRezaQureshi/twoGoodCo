@@ -77,7 +77,11 @@ body{
     align-items: center;
     justify-content: center;
 }
+.bottom-txt h2{
+    font-size: 4vw;
+}
 .bottom-txt p{
+    padding: 0vw;
     margin-bottom: 1.5vw;
 }
 .bottom-txt a{
