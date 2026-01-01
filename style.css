@@ -11,6 +11,17 @@ html, body {
     height: 100%;
     width: 100%;
 }
+body{
+    background-color: #F7F7F7;
+}
+.cursor{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #DCC0B4;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
 /* Page 1 */
 .page1{
     min-height: 100vh;
@@ -88,7 +99,7 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10vh 1.5vw;
+    padding: 10vh 1.5vw 6vh 1.5vw;
     position: relative;
 }
 .topLine{
@@ -123,8 +134,24 @@ hr{
     /* background-color: red; */
     display: flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: center;
     overflow: hidden;
+    position: relative;
+}
+.page2 .elem .dets{
+    position: absolute;
+    height: 60px;
+    width: 80%;
+    background-color: #DCC0B4;
+    z-index: 9;
+    border-radius: 50px;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.page2 .elem .dets:hover{
+    height: 200px;
 }
 
 .page2 .elem img{
@@ -133,6 +160,30 @@ hr{
     object-fit: cover;
     scale: 1.2;
 }
+
+/* Page3 */
+.page3{
+    min-height: 120vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    height: 55vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.child img{
+    height: 90%;
+}
+
 
 /* Responsive page 1 and page 2 */
 @media (max-width: 600px){
